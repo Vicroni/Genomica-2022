@@ -19,9 +19,9 @@ packageVersion("dada2")
 packageVersion("ShortRead")
 packageVersion("Biostrings")
 
-path <-  file.path("~", "Desktop", "Genomica", "codigo") 
+path <-  file.path("C:/Users/sgonz/Desktop/Escuela","Genomica", "codigo") 
 path.cut <- file.path(path, "Zhang2022-seqs-ITS")
-list.files(path.cut)
+list.files(path)
 
 cutFs <- sort(list.files(path.cut, pattern = "_1.fastq.gz", full.names = TRUE))
 cutRs <- sort(list.files(path.cut, pattern = "_2.fastq.gz", full.names = TRUE))
